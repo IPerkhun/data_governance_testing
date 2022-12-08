@@ -1,5 +1,7 @@
 name: your-workflow-name
-on: [push]
+on:
+  pull_request:
+    types: ['opened', 'edited', 'reopened', 'synchronize']
 jobs:
   run:
     runs-on: ubuntu-latest
